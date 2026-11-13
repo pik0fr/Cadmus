@@ -1,0 +1,1 @@
+/home/pik0fr/Projets/gryphon-scan/.venv/bin/python: No module named pytest

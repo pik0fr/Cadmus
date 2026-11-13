@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import numpy, scipy, cv2; print(numpy.__version__, scipy.__version__, cv2.__version__)
+    ^^^^^^^^^^^^^^^^^^^^^^^^
+ModuleNotFoundError: No module named 'numpy'

@@ -1,0 +1,13 @@
+# Development configuration only. Legacy setup.py still owns application packaging.
+[tool.pytest.ini_options]
+testpaths = ["test"]
+pythonpath = ["src"]
+addopts = "-ra"
+
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+builtins = ["_"]  # gettext installs this name at GUI startup
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F821", "F822", "F823"]

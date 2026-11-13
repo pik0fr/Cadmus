@@ -1,0 +1,113 @@
+{
+  "python": "Python 3.13.15",
+  "PYTHONPATH": "src:test/engine:/nix/store/xlzijank04rzc197w8kk0rdlv5lnaa70-python3.13-pyserial-3.5/lib/python3.13/site-packages",
+  "checks": [
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--disable-pip-version-check",
+        "--retries",
+        "0",
+        "--timeout",
+        "5",
+        "-r",
+        "requirements-dev.txt"
+      ],
+      "exit_code": 1,
+      "log": "install-dev.txt"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-c",
+        "import numpy, scipy, cv2; print(numpy.__version__, scipy.__version__, cv2.__version__)"
+      ],
+      "exit_code": 1,
+      "log": "numerical-imports.txt"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "-f",
+        "src/horus"
+      ],
+      "exit_code": 0,
+      "log": "compileall.txt"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "py_compile",
+        "horus"
+      ],
+      "exit_code": 0,
+      "log": "launcher-compile.txt"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "test_serial_protocol",
+        "test_scan_capture_py3",
+        "test_board",
+        "-v"
+      ],
+      "exit_code": 0,
+      "log": "unittest-core-subset.txt"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "test/engine",
+        "-v"
+      ],
+      "exit_code": 1,
+      "log": "unittest-full.txt"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "ruff",
+        "check",
+        "src/horus",
+        "--select",
+        "E4,E7,E9,F821,F822,F823"
+      ],
+      "exit_code": 1,
+      "log": "ruff.txt"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 1,
+      "log": "pytest.txt"
+    },
+    {
+      "command": [
+        ".venv/bin/python",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "log": "pip-check.txt"
+    }
+  ]
+}

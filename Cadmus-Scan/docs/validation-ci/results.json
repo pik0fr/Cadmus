@@ -1,0 +1,44 @@
+{
+  "source_commit": "f9e68619f354ca13b6a23e618ec2aa187569dc47",
+  "run_id": 43449511489,
+  "run_url": "https://github.com/pik0fr/Cadmus/actions/runs/43449511489",
+  "python_target": "3.13",
+  "dependencies": {
+    "numpy": "2.1.3",
+    "scipy": "1.14.1",
+    "opencv-contrib-python": "4.11.0.86"
+  },
+  "scope": "Hardware-free core; GUI and scanner hardware not exercised",
+  "jobs": [
+    {
+      "name": "core (macos-latest)",
+      "id": 131967666257,
+      "url": "https://github.com/pik0fr/Cadmus/actions/runs/43449511489/job/131967666257",
+      "conclusion": "success",
+      "tests_passed": 29,
+      "warnings": 10,
+      "lint": "success",
+      "pip_check": "success"
+    },
+    {
+      "name": "core (ubuntu-latest)",
+      "id": 131967666857,
+      "url": "https://github.com/pik0fr/Cadmus/actions/runs/43449511489/job/131967666857",
+      "conclusion": "success",
+      "tests_passed": 29,
+      "warnings": 10,
+      "lint": "success",
+      "pip_check": "success"
+    },
+    {
+      "name": "core (windows-latest)",
+      "id": 131967667078,
+      "url": "https://github.com/pik0fr/Cadmus/actions/runs/43449511489/job/131967667078",
+      "conclusion": "success",
+      "tests_passed": 29,
+      "warnings": 10,
+      "lint": "success",
+      "pip_check": "success"
+    }
+  ]
+}
