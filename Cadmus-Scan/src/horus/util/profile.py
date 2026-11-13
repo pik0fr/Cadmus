@@ -87,15 +87,15 @@ class Settings(MutableMapping):
         #    return
         setting_type = self.get_setting(key)._type
         try:
-            if setting_type == bool:
+            if setting_type is bool:
                 value = bool(value)
-            elif setting_type == int:
+            elif setting_type is int:
                 value = int(value)
-            elif setting_type == float:
+            elif setting_type is float:
                 value = float(value)
-            elif setting_type == str:
+            elif setting_type is str:
                 value = str(value)
-            elif setting_type == list:
+            elif setting_type is list:
                 value = value
             elif setting_type == np.ndarray:
                 value = np.asarray(value)
@@ -958,8 +958,9 @@ def _(n):
 settings = Settings()
 settings._initialize_settings()
 
-# Remove fake defined _() because later the localization will define a global _()
-del _
+# Drop the temporary module binding so later calls resolve gettext's builtins._.
+# Dynamic removal also avoids treating those later lookups as a deleted local name.
+globals().pop('_')
 
 
 def get_base_path():
