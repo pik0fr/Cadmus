@@ -31,7 +31,7 @@ jobs:
       # The complete legacy tree still has unresolved names. Gate the migrated core.
       - run: >-
           python -m ruff check
-          horus src/horus/util/profile.py src/horus/util/resources.py
+          horus src/horus/util/profile.py src/horus/util/resources.py src/horus/util/system.py
           src/horus/engine/driver/board.py src/horus/engine/scan/scan_capture.py
           src/horus/engine/scan/ciclop_scan.py
           src/horus/engine/algorithms/point_cloud_generation.py
