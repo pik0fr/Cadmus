@@ -1,0 +1,40 @@
+name: Python 3.13 and NumPy 2.1 hardware-free core
+
+on: [push, pull_request, workflow_dispatch]
+
+permissions:
+  contents: read
+
+jobs:
+  core:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    defaults:
+      run:
+        working-directory: Cadmus-Scan
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+          cache: pip
+          cache-dependency-path: |
+            Cadmus-Scan/requirements-core.txt
+            Cadmus-Scan/requirements-dev.txt
+      - run: python -m pip install -r requirements-dev.txt
+      - name: Import compiled numerical dependencies
+        run: python -c "import numpy, scipy, cv2; print(numpy.__version__, scipy.__version__, cv2.__version__)"
+      - run: python -m compileall -q src/horus
+      # The complete legacy tree still has unresolved names. Gate the migrated core.
+      - run: >-
+          python -m ruff check
+          horus src/horus/util/profile.py src/horus/util/resources.py
+          src/horus/engine/driver/board.py src/horus/engine/scan/scan_capture.py
+          src/horus/engine/scan/ciclop_scan.py
+          src/horus/engine/algorithms/point_cloud_generation.py
+          src/horus/engine/calibration/calibration_data.py test
+      - run: python -m pytest -q
+      - run: python -m pip check

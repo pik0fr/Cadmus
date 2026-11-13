@@ -1,0 +1,53 @@
+test_baud_rate (test_board.BoardTest.test_baud_rate) ... ok
+test_serial_name (test_board.BoardTest.test_serial_name) ... ok
+test_point_cloud_py3 (unittest.loader._FailedTest.test_point_cloud_py3) ... ERROR
+test_profile_py3 (unittest.loader._FailedTest.test_profile_py3) ... ERROR
+test_initial_state_retains_background_slot (test_scan_capture_py3.ScanCaptureTests.test_initial_state_retains_background_slot) ... ok
+test_instances_do_not_share_images (test_scan_capture_py3.ScanCaptureTests.test_instances_do_not_share_images) ... ok
+test_bytes_commands_are_rejected_at_application_boundary (test_serial_protocol.SerialProtocolTests.test_bytes_commands_are_rejected_at_application_boundary) ... ok
+test_callback_exception_is_not_retried (test_serial_protocol.SerialProtocolTests.test_callback_exception_is_not_retried) ... ok
+test_command_is_ascii_bytes_and_response_text (test_serial_protocol.SerialProtocolTests.test_command_is_ascii_bytes_and_response_text) ... ok
+test_disconnected_command_calls_callback_once_without_writing (test_serial_protocol.SerialProtocolTests.test_disconnected_command_calls_callback_once_without_writing) ... ok
+test_handshake_decodes_firmware_and_encodes_init_once (test_serial_protocol.SerialProtocolTests.test_handshake_decodes_firmware_and_encodes_init_once) ... ok
+test_motor_laser_and_lights_preserve_gcode (test_serial_protocol.SerialProtocolTests.test_motor_laser_and_lights_preserve_gcode) ... ok
+test_port_discovery_returns_device_names (test_serial_protocol.SerialProtocolTests.test_port_discovery_returns_device_names) ... ok
+test_read_lines_decodes_with_replacement (test_serial_protocol.SerialProtocolTests.test_read_lines_decodes_with_replacement) ... ok
+test_repeated_io_failures_notify_unplug_once (test_serial_protocol.SerialProtocolTests.test_repeated_io_failures_notify_unplug_once) ... ok
+test_reset_sends_control_x_bytes (test_serial_protocol.SerialProtocolTests.test_reset_sends_control_x_bytes) ... ok
+test_write_failure_calls_callback_once (test_serial_protocol.SerialProtocolTests.test_write_failure_calls_callback_once) ... ok
+test_wrong_firmware_closes_port (test_serial_protocol.SerialProtocolTests.test_wrong_firmware_closes_port) ... ok
+
+======================================================================
+ERROR: test_point_cloud_py3 (unittest.loader._FailedTest.test_point_cloud_py3)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_point_cloud_py3
+Traceback (most recent call last):
+  File "/nix/store/nlbr672s24h802ny0hfbnkdrnxinvz25-python3-3.13.15-env/lib/python3.13/unittest/loader.py", line 403, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/nix/store/nlbr672s24h802ny0hfbnkdrnxinvz25-python3-3.13.15-env/lib/python3.13/unittest/loader.py", line 346, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/home/pik0fr/Projets/gryphon-scan/test/engine/test_point_cloud_py3.py", line 3, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+======================================================================
+ERROR: test_profile_py3 (unittest.loader._FailedTest.test_profile_py3)
+----------------------------------------------------------------------
+ImportError: Failed to import test module: test_profile_py3
+Traceback (most recent call last):
+  File "/nix/store/nlbr672s24h802ny0hfbnkdrnxinvz25-python3-3.13.15-env/lib/python3.13/unittest/loader.py", line 403, in _find_test_path
+    module = self._get_module_from_name(name)
+  File "/nix/store/nlbr672s24h802ny0hfbnkdrnxinvz25-python3-3.13.15-env/lib/python3.13/unittest/loader.py", line 346, in _get_module_from_name
+    __import__(name)
+    ~~~~~~~~~~^^^^^^
+  File "/home/pik0fr/Projets/gryphon-scan/test/engine/test_profile_py3.py", line 6, in <module>
+    import numpy as np
+ModuleNotFoundError: No module named 'numpy'
+
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.012s
+
+FAILED (errors=2)

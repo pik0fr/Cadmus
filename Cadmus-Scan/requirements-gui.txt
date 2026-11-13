@@ -1,0 +1,5 @@
+# Candidate GUI environment; not yet validated with the migrated application.
+-r requirements-core.txt
+wxPython==4.2.2
+PyOpenGL==3.1.7
+matplotlib==3.9.4

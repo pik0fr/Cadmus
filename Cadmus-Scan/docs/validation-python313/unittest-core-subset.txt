@@ -1,0 +1,21 @@
+test_bytes_commands_are_rejected_at_application_boundary (test_serial_protocol.SerialProtocolTests.test_bytes_commands_are_rejected_at_application_boundary) ... ok
+test_callback_exception_is_not_retried (test_serial_protocol.SerialProtocolTests.test_callback_exception_is_not_retried) ... ok
+test_command_is_ascii_bytes_and_response_text (test_serial_protocol.SerialProtocolTests.test_command_is_ascii_bytes_and_response_text) ... ok
+test_disconnected_command_calls_callback_once_without_writing (test_serial_protocol.SerialProtocolTests.test_disconnected_command_calls_callback_once_without_writing) ... ok
+test_handshake_decodes_firmware_and_encodes_init_once (test_serial_protocol.SerialProtocolTests.test_handshake_decodes_firmware_and_encodes_init_once) ... ok
+test_motor_laser_and_lights_preserve_gcode (test_serial_protocol.SerialProtocolTests.test_motor_laser_and_lights_preserve_gcode) ... ok
+test_port_discovery_returns_device_names (test_serial_protocol.SerialProtocolTests.test_port_discovery_returns_device_names) ... ok
+test_read_lines_decodes_with_replacement (test_serial_protocol.SerialProtocolTests.test_read_lines_decodes_with_replacement) ... ok
+test_repeated_io_failures_notify_unplug_once (test_serial_protocol.SerialProtocolTests.test_repeated_io_failures_notify_unplug_once) ... ok
+test_reset_sends_control_x_bytes (test_serial_protocol.SerialProtocolTests.test_reset_sends_control_x_bytes) ... ok
+test_write_failure_calls_callback_once (test_serial_protocol.SerialProtocolTests.test_write_failure_calls_callback_once) ... ok
+test_wrong_firmware_closes_port (test_serial_protocol.SerialProtocolTests.test_wrong_firmware_closes_port) ... ok
+test_initial_state_retains_background_slot (test_scan_capture_py3.ScanCaptureTests.test_initial_state_retains_background_slot) ... ok
+test_instances_do_not_share_images (test_scan_capture_py3.ScanCaptureTests.test_instances_do_not_share_images) ... ok
+test_baud_rate (test_board.BoardTest.test_baud_rate) ... ok
+test_serial_name (test_board.BoardTest.test_serial_name) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 0.038s
+
+OK

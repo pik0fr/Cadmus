@@ -1,0 +1,546 @@
+{
+  "source_commit": "e172c0445bb2cbb6116aaeaae771a3a498b99bf3",
+  "local_snapshot_commit": "d139371a115d9336c3f89ec625859f2cfaf4939b",
+  "snapshot_files_verified": 305,
+  "missing_upstream_assets": [
+    {
+      "path": "doc/readthedocs/source/_static/scanner-components/stepper-motor.png",
+      "git_blob_sha": "bcfa858842d8487740949d79f1715446a2dc3275"
+    },
+    {
+      "path": "pkg/win32/drivers/CDM v2.10.00 WHQL Certified.exe",
+      "git_blob_sha": "0d5aa2a1771a5cd5d52f06b306eabf187c0b32f4"
+    }
+  ],
+  "baseline_syntax_errors": [
+    {
+      "path": "src/horus/engine/algorithms/point_cloud_generation.py",
+      "line": 102,
+      "error": "inconsistent use of tabs and spaces in indentation"
+    },
+    {
+      "path": "src/horus/engine/calibration/platform_by_lasers.py",
+      "line": 83,
+      "error": "expected an indented block after 'if' statement on line 82"
+    },
+    {
+      "path": "src/horus/engine/driver/camera_usb.py",
+      "line": 333,
+      "error": "Missing parentheses in call to 'print'. Did you mean print(...)?"
+    },
+    {
+      "path": "src/horus/engine/driver/uvc/mac/cf_string.py",
+      "line": 74,
+      "error": "Missing parentheses in call to 'print'. Did you mean print(...)?"
+    },
+    {
+      "path": "src/horus/engine/driver/uvc/mac/raw.py",
+      "line": 252,
+      "error": "Missing parentheses in call to 'print'. Did you mean print(...)?"
+    },
+    {
+      "path": "src/horus/engine/scan/ciclop_scan.py",
+      "line": 151,
+      "error": "Missing parentheses in call to 'print'. Did you mean print(...)?"
+    },
+    {
+      "path": "src/horus/gui/util/opengl_helpers.py",
+      "line": 76,
+      "error": "multiple exception types must be parenthesized"
+    },
+    {
+      "path": "src/horus/gui/workbench/calibration/pages/cloud_correction.py",
+      "line": 35,
+      "error": "inconsistent use of tabs and spaces in indentation"
+    },
+    {
+      "path": "src/horus/gui/workbench/calibration/pages/laser_triangulation.py",
+      "line": 35,
+      "error": "inconsistent use of tabs and spaces in indentation"
+    },
+    {
+      "path": "src/horus/gui/workbench/calibration/pages/pattern_settings.py",
+      "line": 46,
+      "error": "inconsistent use of tabs and spaces in indentation"
+    },
+    {
+      "path": "src/horus/gui/workbench/calibration/pages/platform_extrinsics.py",
+      "line": 37,
+      "error": "inconsistent use of tabs and spaces in indentation"
+    },
+    {
+      "path": "src/horus/gui/workbench/calibration/pages/scanner_autocheck.py",
+      "line": 30,
+      "error": "inconsistent use of tabs and spaces in indentation"
+    },
+    {
+      "path": "src/horus/gui/workbench/scanning/main.py",
+      "line": 231,
+      "error": "Missing parentheses in call to 'print'. Did you mean print(...)?"
+    },
+    {
+      "path": "src/horus/util/gryphon_util.py",
+      "line": 250,
+      "error": "Missing parentheses in call to 'print'. Did you mean print(...)?"
+    },
+    {
+      "path": "src/horus/util/mesh_loaders/ply.py",
+      "line": 125,
+      "error": "Missing parentheses in call to 'print'. Did you mean print(...)?"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 89,
+      "error": "Missing parentheses in call to 'print'. Did you mean print(...)?"
+    }
+  ],
+  "remaining_legacy_names": [
+    {
+      "path": "src/horus/engine/algorithms/laser_segmentation.py",
+      "line": 177,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/engine/algorithms/laser_segmentation.py",
+      "line": 267,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/engine/algorithms/point_cloud_roi.py",
+      "line": 44,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/engine/algorithms/point_cloud_roi.py",
+      "line": 46,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/engine/calibration/autocheck.py",
+      "line": 103,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/engine/calibration/autocheck.py",
+      "line": 126,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/engine/calibration/autocheck.py",
+      "line": 149,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/engine/calibration/camera_intrinsics.py",
+      "line": 121,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/engine/calibration/cloud_correction.py",
+      "line": 77,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/engine/calibration/cloud_correction.py",
+      "line": 78,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/engine/calibration/cloud_correction.py",
+      "line": 112,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/engine/calibration/combo_calibration.py",
+      "line": 99,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/engine/calibration/combo_calibration.py",
+      "line": 107,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/engine/calibration/combo_calibration.py",
+      "line": 164,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/engine/calibration/laser_triangulation.py",
+      "line": 123,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/engine/calibration/laser_triangulation.py",
+      "line": 129,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/engine/calibration/laser_triangulation.py",
+      "line": 149,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/engine/calibration/laser_triangulation.py",
+      "line": 220,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/engine/calibration/platform_extrinsics.py",
+      "line": 366,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/engine/driver/uvc/mac/__init__.py",
+      "line": 122,
+      "name": "itervalues"
+    },
+    {
+      "path": "src/horus/engine/driver/uvc/mac/__init__.py",
+      "line": 127,
+      "name": "itervalues"
+    },
+    {
+      "path": "src/horus/gui/main.py",
+      "line": 329,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/gui/main.py",
+      "line": 335,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/gui/main.py",
+      "line": 472,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/gui/main.py",
+      "line": 476,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/gui/main.py",
+      "line": 480,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/gui/main.py",
+      "line": 483,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/gui/main.py",
+      "line": 571,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/gui/main.py",
+      "line": 627,
+      "name": "unicode"
+    },
+    {
+      "path": "src/horus/gui/util/gryphon_controls.py",
+      "line": 135,
+      "name": "basestring"
+    },
+    {
+      "path": "src/horus/gui/util/gryphon_controls.py",
+      "line": 147,
+      "name": "basestring"
+    },
+    {
+      "path": "src/horus/gui/util/gryphon_controls.py",
+      "line": 148,
+      "name": "unicode"
+    },
+    {
+      "path": "src/horus/gui/util/opengl_gui.py",
+      "line": 67,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/gui/util/opengl_gui.py",
+      "line": 70,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/gui/util/opengl_gui.py",
+      "line": 76,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/gui/util/opengl_gui.py",
+      "line": 79,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/gui/util/opengl_gui.py",
+      "line": 238,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/gui/util/opengl_helpers.py",
+      "line": 248,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/gui/util/opengl_helpers.py",
+      "line": 329,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/gui/util/scene_view.py",
+      "line": 651,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/gui/wizard/connection_page.py",
+      "line": 107,
+      "name": "unicode"
+    },
+    {
+      "path": "src/horus/gui/workbench/adjustment/current_video.py",
+      "line": 64,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/gui/workbench/adjustment/current_video.py",
+      "line": 75,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/gui/workbench/calibration/pages/capture_page.py",
+      "line": 48,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/gui/workbench/calibration/pages/capture_page.py",
+      "line": 72,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/gui/workbench/calibration/pages/laser_triangulation.py",
+      "line": 168,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/gui/workbench/calibration/pages/laser_triangulation.py",
+      "line": 222,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/gui/workbench/calibration/pages/laser_triangulation.py",
+      "line": 226,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/gui/workbench/calibration/pages/platform_extrinsics.py",
+      "line": 234,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/gui/workbench/scanning/panels.py",
+      "line": 151,
+      "name": "unicode"
+    },
+    {
+      "path": "src/horus/gui/workbench/toolbar.py",
+      "line": 105,
+      "name": "unicode"
+    },
+    {
+      "path": "src/horus/gui/workbench/workbench.py",
+      "line": 93,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/gui/workbench/workbench.py",
+      "line": 98,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/gryphon_util.py",
+      "line": 46,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/util/gryphon_util.py",
+      "line": 68,
+      "name": "basestring"
+    },
+    {
+      "path": "src/horus/util/mesh_loaders/ply.py",
+      "line": 146,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/util/mesh_loaders/ply.py",
+      "line": 222,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/util/mesh_loaders/ply.py",
+      "line": 292,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/util/mesh_loaders/ply.py",
+      "line": 300,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/util/model.py",
+      "line": 56,
+      "name": "xrange"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 168,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 171,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 199,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 200,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 214,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 219,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 238,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 244,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 248,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 290,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 293,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 295,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 325,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 326,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 327,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 339,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 344,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 349,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 391,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 616,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 619,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 626,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 665,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 669,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 706,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/point_cloud_tools.py",
+      "line": 719,
+      "name": "iteritems"
+    },
+    {
+      "path": "src/horus/util/version.py",
+      "line": 10,
+      "name": "urllib2"
+    },
+    {
+      "path": "src/horus/util/version.py",
+      "line": 49,
+      "name": "urllib2"
+    },
+    {
+      "path": "src/horus/util/version.py",
+      "line": 52,
+      "name": "urllib2"
+    }
+  ],
+  "current_python312_grammar_errors": [],
+  "source_python_file_count": 101
+}

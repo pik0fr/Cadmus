@@ -1,0 +1,4 @@
+src/horus/util/version.py:62: SyntaxWarning: "is not" with 'str' literal. Did you mean "!="?
+  return latest_version is not '' and \
+src/horus/util/version.py:65: SyntaxWarning: "is not" with 'str' literal. Did you mean "!="?
+  current_datetime is not '' and \
