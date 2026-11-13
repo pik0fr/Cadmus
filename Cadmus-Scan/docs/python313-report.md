@@ -1,5 +1,10 @@
 # Cadmus-Scan — Python 3.13 et NumPy 2.1
 
+> La reprise dans Cadmus a depuis validé **29 tests sous Linux, Windows et macOS**
+> avec NumPy 2.1.3. Voir [les résultats GitHub Actions et leur portée](cadmus-integration.md).
+> Les limitations du terminal local décrites ci-dessous subsistent ; les journaux
+> `validation-python313/` correspondent à la première tentative locale.
+
 La cible de développement remplace la base Python 3.12 / NumPy 1.26 du lot 1,
 à la demande de l'utilisateur. La branche locale est `migration/python313`.
 
@@ -53,8 +58,10 @@ valide pas les nouvelles dépendances non installées. `git diff --check` passe.
 
 Les 16 tests sans dépendances numériques restent exécutables avec le paquet
 pyserial du système. Les 10 tests des réglages et de la géométrie ne peuvent
-pas être exécutés tant que NumPy/OpenCV manquent. La CI n'a pas été lancée et
-aucune validation Windows/macOS ni matérielle n'est revendiquée.
+pas être exécutés localement tant que NumPy/OpenCV manquent. La validation du cœur
+sous Windows/Linux/macOS a ensuite été exécutée dans GitHub Actions et est
+documentée dans `cadmus-integration.md`. Aucune validation matérielle ou de
+l'interface graphique n'est revendiquée.
 
 ## Installation dans un environnement avec accès réseau
 

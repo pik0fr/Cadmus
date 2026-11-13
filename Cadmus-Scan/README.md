@@ -4,7 +4,8 @@ Cadmus-Scan est la partie logicielle du projet **Cadmus**, issue de Gryphon Scan
 et de Horus. La cible de développement est **Python 3.13 avec NumPy 2.1.3**.
 
 La migration est en cours : le protocole série et un premier socle numérique
-disposent de tests sans matériel. L'interface graphique, les calibrations
+passent 29 tests sans matériel sous Linux, Windows et macOS avec NumPy 2.1.3.
+L'interface graphique, les calibrations
 complètes et le scan sur matériel réel restent à migrer et à valider.
 
 ## Développement
